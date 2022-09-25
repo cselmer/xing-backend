@@ -1,17 +1,20 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
+gem 'actionpack'
+gem 'active_model_serializers', '~> 0.9.4'
+gem 'bigdecimal', '~> 1.3.5'
 gem 'byebug'
 gem 'cadre'
 gem 'corundum'
-gem 'sqlite3'
+gem 'fuubar', '~> 2.0.0.rc1'
 gem 'json_spec'
-gem 'actionpack'
-gem 'rspec', "~> 3.2"
+gem 'kaminari'
+gem 'rspec'
 gem 'rspec-rails'
 gem 'simplecov'
 gem 'simplecov-json'
-gem 'fuubar', "~> 2.0.0.rc1"
-gem 'kaminari'
+gem 'sprockets', '~> 3.0'
+gem 'sqlite3'
 
 gem 'codeclimate-test-reporter', group: :test, require: nil
-gemspec :name => "xing-backend"
+gemspec name: 'xing-backend'
