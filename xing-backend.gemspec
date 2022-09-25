@@ -1,29 +1,29 @@
 Gem::Specification.new do |spec|
-  spec.name		= "xing-backend"
-  spec.version		= "1.0.0-beta"
+  spec.name	= 'xing-backend'
+  spec.version		= '1.0.0-beta'
   author_list = {
-    "Evan Dorn" => 'evan@lrdesign.com',
-    "Patricia Ho" => 'patricia@lrdesign.com',
-    "Hannah Howard" => 'hannah@lrdesign.com',
-    "Judson Lester" => 'judson@lrdesign.com'
+    'Evan Dorn' => 'evan@lrdesign.com',
+    'Patricia Ho' => 'patricia@lrdesign.com',
+    'Hannah Howard' => 'hannah@lrdesign.com',
+    'Judson Lester' => 'judson@lrdesign.com'
   }
-  spec.authors		= author_list.keys
-  spec.email		= spec.authors.map {|name| author_list[name]}
-  spec.summary		= "Rails backend classes for the Xing web development framework."
-  spec.description	= <<-EndDescription
+  spec.authors	= author_list.keys
+  spec.email	= spec.authors.map { |name| author_list[name] }
+  spec.summary	= 'Rails backend classes for the Xing web development framework.'
+  spec.description	= <<-ENDDESCRIPTION
     Xing is a Rails + AngularJS + Hypermedia web development framework and platform.  This
     gem contains the base code for a backend/rails server in Xing.
-  EndDescription
+  ENDDESCRIPTION
 
-  spec.homepage        = "http://github.com/#{spec.name.downcase}"
-  spec.required_rubygems_version = Gem::Requirement.new(">= 0") if spec.respond_to? :required_rubygems_version=
+  spec.homepage = "http://github.com/#{spec.name.downcase}"
+  spec.required_rubygems_version = Gem::Requirement.new('>= 0') if spec.respond_to? :required_rubygems_version=
 
   # Do this: y$@"
   # !!find lib bin doc spec spec_help -not -regex '.*\.\(sw.\|keep\)' -type f  2>/dev/null
   #
   # On OSX:
   # find -E lib bin doc spec spec_help -not -regex '.*\.(sw.|keep)' -type f  2>/dev/null
-  spec.files		= %w[
+  spec.files	= %w[
     config/routes.rb
     config/locales/json.yml
     app/models/role.rb
@@ -138,31 +138,31 @@ Gem::Specification.new do |spec|
     spec_help/file-sandbox.rb
   ]
 
-  spec.licenses = ["MIT"]
+  spec.licenses = ['MIT']
   spec.require_paths = %w[lib/]
-  spec.rubygems_version = "1.3.5"
+  spec.rubygems_version = '1.3.5'
 
-  spec.has_rdoc		= false  # TODO
-  #spec.extra_rdoc_files = Dir.glob("doc/**/*")
-  spec.rdoc_options	= %w{--inline-source }
-  spec.rdoc_options	+= %w{--main doc/README }
-  spec.rdoc_options	+= ["--title", "#{spec.name}-#{spec.version} Documentation"]
+  spec.has_rdoc	= false # TODO
+  # spec.extra_rdoc_files = Dir.glob("doc/**/*")
+  spec.rdoc_options	= %w[--inline-source]
+  spec.rdoc_options	+= %w[--main doc/README]
+  spec.rdoc_options	+= ['--title', "#{spec.name}-#{spec.version} Documentation"]
 
-
-  spec.add_dependency 'rails', ">= 4.2.5.1", "< 4.3"
-  spec.add_dependency 'active_model_serializers', "~> 0.9", ">= 0.9.3"
-  spec.add_dependency 'i18n', "~> 0.7"
-  spec.add_dependency 'xing_backend_token_auth', "~> 0.1", ">= 0.1.31"
-  spec.add_dependency 'xing-dev-assets', "= 1.0.0-beta"
+  spec.add_dependency 'active_model_serializers', '~> 0.9', '>= 0.9.3'
+  spec.add_dependency 'hash_validator', '~> 0.4'
+  spec.add_dependency 'i18n', '~> 0.7'
+  spec.add_dependency 'json_spec', '~> 1.1'
+  spec.add_dependency 'rack-cors', '~> 0.4'
+  spec.add_dependency 'rails', '>= 4.2.5.1', '< 4.3'
   spec.add_dependency 'rails-rfc6570', '~> 0.3'
-  spec.add_dependency 'json_spec', "~> 1.1"
-  spec.add_dependency 'hash_validator', "~> 0.4"
-  spec.add_dependency 'rack-cors', "~> 0.4"
-  spec.add_dependency 'sidekiq', "~> 3.3"
+  spec.add_dependency 'sidekiq', '< 5'
   spec.add_dependency 'sinatra', '~> 1.3'
+  spec.add_dependency 'sprockets', '~> 3.0'
+  spec.add_dependency 'xing_backend_token_auth', '~> 0.1', '>= 0.1.31'
+  spec.add_dependency 'xing-dev-assets', '= 1.0.0-beta'
 
   # Snapshot reqs
-  spec.add_dependency 'builder', "~> 3.1"
-  spec.add_dependency 'typhoeus', "~> 0.7"
+  spec.add_dependency 'builder', '~> 3.1'
   spec.add_dependency 'selenium-webdriver'
+  spec.add_dependency 'typhoeus', '~> 0.7'
 end
