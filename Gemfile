@@ -15,7 +15,7 @@ gem 'simplecov'
 gem 'simplecov-json'
 gem 'sprockets', '~> 3.0'
 gem 'sqlite3'
-gem 'xing_backend_token_auth', git: 'https://github.com/cselmer/xing_backend_token_auth'
+gem 'xing_backend_token_auth', path: '/Users/chris/clients/yoric/xing_backend_token_auth' #git: 'https://github.com/cselmer/xing_backend_token_auth'
 
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gemspec name: 'xing-backend'
