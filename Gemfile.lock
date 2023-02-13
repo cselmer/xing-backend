@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/cselmer/xing_backend_token_auth
-  revision: c99ed54eade7e3dfb44d4601f084cc0c37b1c499
+  revision: 52d8f925ceea8073c17e660643afb46c2f9efa13
   specs:
-    xing_backend_token_auth (0.2)
+    xing_backend_token_auth (0.2.2)
       bigdecimal (~> 1.3.5)
       devise (= 4.4.3)
       rails (~> 4.1)
