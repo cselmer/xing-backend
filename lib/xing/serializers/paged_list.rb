@@ -13,7 +13,7 @@ module Xing::Serializers
     include Paged
 
     def page_num
-      object.current_page
+      object.current_page.to_i
     end
 
     def self_link
